@@ -36,63 +36,9 @@ export default function Dashboard() {
     cards: "",
     title: "",
   });
-  const [adsData, setAdsData] = useState([]);
-  const [skip, setSkip] = useState(0);
-  const [limit, setLimit] = useState(20);
-  const [totalAdsCount, setToltalAdsCount] = useState(0);
-  const [currentContext, setCurrentContext] = useState("")
-  const scrolReff = useRef();
-  const [contentLoaded, setContentLoaded] = useState(true); // Ensure you have a state for this
-  const data = {}; // Make sure this is set appropriately to your data source
 
-  async function handleScrollAds(skip , limit){
-    isFetchingBlock = true;
-    setContentLoaded(true)
-    const response = await fetchOnScrollFetch(skip, limit, currentContext?.currentContext, currentContext?.contextId);
-    setContentLoaded(false)
-    isFetchingBlock = false;
-    const heler = adsData
-     heler.push(...response.adsData.adsData)
-    setAdsData([...heler, ])
-    setToltalAdsCount(response?.adsData?.overallCount)
-   }
  
 
-
-  const handleScroll = () => {
-    try {
-
-      const bodyElement = scrolReff.current;
-      if (!bodyElement) return;
-      const isScrollingDown = bodyElement.scrollTop > (bodyElement.dataset.scrollTop || 0);
-      const isScrollingRight = bodyElement.scrollLeft > (bodyElement.dataset.scrollLeft || 0);
-      
-      bodyElement.dataset.scrollTop = bodyElement.scrollTop;
-      bodyElement.dataset.scrollLeft = bodyElement.scrollLeft;
-      if ((isScrollingDown || isScrollingRight )&& !isFetchingBlock) {
-        const isBottom = (bodyElement.scrollTop + bodyElement.clientHeight) >= (bodyElement.scrollHeight - 200);
-        if (isBottom  && skip <= totalAdsCount & !isFetchingBlock) {
-          setSkip((prevSkip) => prevSkip + limit);
-          handleScrollAds(skip +limit, limit)
-
-        }
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    const scrollElement = scrolReff.current;
-    if (scrollElement) {
-      scrollElement.addEventListener('scroll', handleScroll);
-    }
-    return () => {
-      if (scrollElement) {
-        scrollElement.removeEventListener('scroll', handleScroll);
-      }
-    };
-  }, [isFetchingBlock, contentLoaded, skip, limit, currentContext]);
 
   return (
     <>
@@ -103,10 +49,10 @@ export default function Dashboard() {
             chatbotVisibility ? "xl:w-[76%]" : "xl:w-full"
           }`}
         >
-          <div className={`ad-container lg:col-span-4 xl:col-span-5`} ref={scrolReff}>
+          <div className={`ad-container lg:col-span-4 xl:col-span-5`}>
             {onMobile ? (
               <>
-                <AdCard adsData={adsData}  />
+                <AdCard  />
               </>
             ) : (
               <>
@@ -117,7 +63,7 @@ export default function Dashboard() {
                       : "xl:columns-2 overflow-hidden"
                   }`}
                 >
-                  <AdCard adsData={adsData} />
+                  <AdCard />
                 </div>
               </>
             )}
