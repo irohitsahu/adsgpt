@@ -70,7 +70,7 @@ export default function PieChart({ analyticsChartBottom }) {
     let chart = root.container.children.push(
       am5percent.PieChart.new(root, {
         endAngle: 270,
-        radius: am5.percent(90),
+        radius: am5.percent(70),
       })
     );
 

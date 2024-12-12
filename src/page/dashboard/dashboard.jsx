@@ -94,56 +94,6 @@ export default function Dashboard() {
     };
   }, [isFetchingBlock, contentLoaded, skip, limit, currentContext]);
 
-  useEffect(() => {
-    if (window.innerWidth < 580) setOnMobile(dispatch, true);
-  }, [dispatch]);
-
-  useEffect(() => {
-    const socket = io("https://adsgpt-dev-api.poweradspy.com/");
-    setSocket(socket);
-    socket.on("chatResponse", (data) => {
-      setChats((prevChats) => [...prevChats, data]);
-    });
-
-    socket.on("message", (message) => {
-      console.log("Received message:", message);
-    });
-    socket.on("analyticsChartBottom", (data) => {
-      setAnalyticsChartBottom({
-        chartArr: data?.analyticsChart?.chartData.sort((a, b) => b.value - a.value).slice(0, 10),
-        title: data?.title,
-      });
-    });
-    socket.on("analyticsChartMid", (data) => {
-      let parseData = JSON.parse(data);
-    });
-    socket.on("analyticsChartTop", (data) => {
-      let parseData = JSON.parse(data);
-      setAnalyticsChartTop({
-        chartArr: parseData?.analyticsChart?.chartData[0],
-        cards: parseData?.cards,
-        title:parseData?.title
-      });
-    });
-    socket.on("adsData", (data) => {
-
-      setAdsData(data);
-    });
-     socket.on("currentContext", (data) => {
-       if (data?.currentContext);
-       setCurrentContext(data);
-      });
-    socket.on("resolve", (data) => {
-      if (data?.allowChat) 
-      setCanChat(dispatch, true);
-    });
-
-    // Clean up the connection when the component unmounts
-    return () => {
-      socket.disconnect();
-    };
-  }, []);
-
   return (
     <>
       <div className="dashboard">

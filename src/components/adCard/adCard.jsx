@@ -47,6 +47,86 @@ export default function AdCard({ adsData }) {
       adLabelText:
         "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
     },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
+    {
+      owner: "Myntra",
+      adLabelText:
+        "This latest Facebook ad by crisis has 450 likes and 120 comments till now. This latest Facebook ad by crisis has 450 likes and 120 comments till now.This latest Facebook ad by crisis has 450 likes and 120 comments till now.",
+    },
   ];
   const [isDataPresent] = useState(true);
   const [controller, dispatch] = useUIController();

@@ -53,7 +53,7 @@ function UIControllerProvider({ children }) {
       LanguageDropdown: false,
     },
     adDropdownVisibility: {},
-    isDarkMode: false,
+    isDarkMode: true,
     onMobile: false,
     canChat: true,
   };

@@ -26,44 +26,26 @@ export default function ColumnMovingBullet() {
       {
         name: "Monica",
         steps: 45688,
-        pictureSettings: {
-          src: "https://www.amcharts.com/wp-content/uploads/2019/04/monica.jpg",
-        },
       },
       {
         name: "Joey",
         steps: 35781,
-        pictureSettings: {
-          src: "https://www.amcharts.com/wp-content/uploads/2019/04/joey.jpg",
-        },
       },
       {
         name: "Ross",
         steps: 25464,
-        pictureSettings: {
-          src: "https://www.amcharts.com/wp-content/uploads/2019/04/ross.jpg",
-        },
       },
       {
         name: "Phoebe",
         steps: 18788,
-        pictureSettings: {
-          src: "https://www.amcharts.com/wp-content/uploads/2019/04/phoebe.jpg",
-        },
       },
       {
         name: "Rachel",
         steps: 15465,
-        pictureSettings: {
-          src: "https://www.amcharts.com/wp-content/uploads/2019/04/rachel.jpg",
-        },
       },
       {
         name: "Chandler",
         steps: 11561,
-        pictureSettings: {
-          src: "https://www.amcharts.com/wp-content/uploads/2019/04/chandler.jpg",
-        },
       },
     ]; // Create chart
     // https://www.amcharts.com/docs/v5/charts/xy-chart/
