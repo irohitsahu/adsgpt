@@ -141,7 +141,7 @@ export default function AdCard({ adsData }) {
               className={`card ad-card-gradient ad-card lg:w-[calc(100%-24px)] inline-block`}
               variants={FADE_UP_ANIMATION_VARIANT}
               initial="initial"
-              whileInView="whileInView"
+              animate="animate"
               viewport={{ once: true }}
             >
               <div className="ad-card-header gap-3 p-3 w-full">
