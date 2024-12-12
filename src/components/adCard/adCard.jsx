@@ -136,13 +136,9 @@ export default function AdCard({ adsData }) {
       {isDataPresent ? (
         <>
           {AdCardsData.map((item, index) => (
-            <motion.div
+            <div
               key={index}
               className={`card ad-card-gradient ad-card lg:w-[calc(100%-24px)] inline-block`}
-              variants={FADE_UP_ANIMATION_VARIANT}
-              initial="initial"
-              animate="animate"
-              viewport={{ once: true }}
             >
               <div className="ad-card-header gap-3 p-3 w-full">
                 <div className="ad-card-profile-img">
@@ -188,7 +184,7 @@ export default function AdCard({ adsData }) {
               <span className="gradient-text flex justify-start items-start w-full m-3 info-text">
                 {item?.adLabelText}
               </span>
-            </motion.div>
+            </div>
           ))}
         </>
       ) : (

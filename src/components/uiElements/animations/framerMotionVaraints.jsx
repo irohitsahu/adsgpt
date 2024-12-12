@@ -9,13 +9,6 @@ export const FADE_UP_ANIMATION_VARIANT = {
       duration: 0.3,
     },
   },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.3,
-    },
-  },
 };
 export const FADE_UP_FROM_END_ANIMATION_VARIANT = {
   initial: { opacity: 0, y: 500 },
@@ -76,7 +69,7 @@ export const SCALE_UP_VARIANT = {
   animate: {
     opacity: 1,
     scale: 1,
-    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
   },
   exit: { opacity: 0, scale: 0 },
 };
