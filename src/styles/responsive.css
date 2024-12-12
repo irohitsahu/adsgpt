@@ -1,0 +1,75 @@
+@media screen and (min-width: 580px) {
+  .dashboard {
+    padding: 90px 10px 0 10px;
+  }
+  .chatbot-container {
+    width: 400px;
+  }
+  .ad-card {
+    min-width: 50%;
+  }
+}
+@media screen and (min-width: 640px) {
+  .dashboard {
+    padding: 90px 25px 0 25px;
+  }
+  .ad-card {
+    min-width: 42%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dashboard {
+    padding: 90px 45px 0 45px;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .ad-card {
+    min-width: 42%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dashboard {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  .ad-container {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    height: 100%;
+    max-width: unset;
+    overflow: auto;
+  }
+  .chart-container {
+    height: 100%;
+    overflow: auto;
+  }
+  .navbar {
+    height: 70px;
+  }
+  .navbar .navbar-logo {
+    width: 130px;
+  }
+  .ad-card {
+    min-width: unset;
+  }
+}
+@media (min-width: 1280px) {
+  .navbar{
+    z-index: 5;
+  }
+  .backdrop-overlay {
+    display: none;
+  }
+  .chatbot-container {
+    height: calc(100% - 90px);
+    top: 90px;
+    right: 45px;
+    left: unset;
+    margin: unset;
+  }
+  .chart-card .info-box {
+    width: 100%;
+  }
+}

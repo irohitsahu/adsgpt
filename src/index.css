@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "QuickSand";
+  src: url("./assets/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("./assets/fonts/PublicSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+:root {
+  font-family: "QuickSand", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.light {
+  --text-primary: rgba(255, 255, 255, 1);
+  --text-secondary: #282828;
+  --text-gradient: -webkit-linear-gradient(90deg, #3f51b5 22.5%, #673ab7 100%);
+  --background-primary: rgba(255, 255, 255, 1);
+  --scrollbar-primary: #ededed;
+  --ad-card-background: rgba(255, 255, 255, 1);
+  --chart-card-background: #f3f3f3;
+  --chart-container-backgrond: #ffffff;
+  --heading-text-primary: #1f296a;
+  --navbar-background: #ededed;
+
+  color: var(--text-primary);
+  background-color: var(--background-primary);
+}
+
+body.dark {
+  --text-primary: rgba(255, 255, 255, 1);
+  --text-secondary: #e4e4e4;
+  --text-gradient: -webkit-linear-gradient(90deg, #fff 22.5%, #fff 100%);
+  --background-primary: #1f296a;
+  --scrollbar-primary: #ffffff4d;
+  --ad-card-background: linear-gradient(90deg, #3f51b5 0%, #673ab7 100%);
+  --chart-card-background: linear-gradient(
+    76.11deg,
+    #3f51b5 29.86%,
+    #673ab7 137.36%
+  );
+  --chart-container-backgrond: #2f3d90;
+  --heading-text-primary: #ffffff;
+  --navbar-background: #3f51b5;
+
+  color: var(--text-primary);
+  background-color: var(--background-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* Scrollbar CSS */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-primary);
+  border-radius: 10px;
+}
